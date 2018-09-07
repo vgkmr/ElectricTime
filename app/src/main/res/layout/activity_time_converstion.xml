@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeConverstion">
+
+    <EditText
+        android:id="@+id/ogTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Original Transport Method Travel Time"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/chooseTransportText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:text="Choose Original Transport Method" />
+
+    <RadioGroup
+        android:id="@+id/group1"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chooseTransportText">
+
+        <RadioButton
+            android:id="@+id/segwayradioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Segway i2 SE" />
+
+        <RadioButton
+            android:id="@+id/walkingradioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Walking" />
+
+        <RadioButton
+            android:id="@+id/boostedradioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Boosted Mini S Board" />
+
+        <RadioButton
+            android:id="@+id/evolveradioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Evolve Skateboard" />
+
+        <RadioButton
+            android:id="@+id/hoverboardradioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hovertrax Hoverboard" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/backViewButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Calculate Travel Time by Transport Method" />
+
+    <TextView
+        android:id="@+id/newTransportMethodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/group1"
+        android:text="Choose New Transport Method" />
+
+    <RadioGroup
+        android:id="@+id/group2"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/newTransportMethodText">
+
+        <RadioButton
+            android:id="@+id/segwayradioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Segway i2 SE" />
+
+        <RadioButton
+            android:id="@+id/walkingradioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Walking" />
+
+        <RadioButton
+            android:id="@+id/boostedradioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Boosted Mini S Board" />
+
+        <RadioButton
+            android:id="@+id/evolveradioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Evolve Skateboard" />
+
+        <RadioButton
+            android:id="@+id/hoverboardradioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hovertrax Hoverboard" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/newTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backViewButton"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="New Transport Method Travel Time" />
+
+    <Button
+        android:id="@+id/convertbwMethods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/group2"
+        android:onClick="convert"
+        android:text="Convert Between Methods" />
+
+</RelativeLayout>

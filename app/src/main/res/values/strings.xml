@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ElectricTimeFinal</string>
+
+    <string-array name="convertFromOptions">
+        <item>Walking</item>
+        <item>Boosted Mini S Board</item>
+        <item>Segway i2 SE</item>
+        <item>Evolve Skateboard</item>
+        <item>Hovertrax Hoverboard</item>
+    </string-array>
+
+    <string-array name="convertToOptions">
+        <item>Walking</item>
+        <item>Boosted Mini S Board</item>
+        <item>Segway i2 SE</item>
+        <item>Evolve Skateboard</item>
+        <item>Hovertrax Hoverboard</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
